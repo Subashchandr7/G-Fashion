@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/css/fashion.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/letter-f-crown-logo-crown-logo-letter-f-template-beauty-fashion-star-elegant-luxury-sign_754537-653.jpg">
+</head>
+<body>
+    <div class="main">
+        <div class="pCart">
+        <div class="cart">
+            <div class="cartbar">
+                <h6>Now shipping to Canada</h6>
+            </div>
+            <div class="cartValues"> 
+
+            <div class="compare">Compare <i class="fa-solid fa-code-compare"></i></div>
+            <div class="watchlist"  onclick="showWishlist()">Lists <i class="fa-regular fa-heart icon-red "></i> <span class="badge" id="wishlistCount">0</span></div>
+            <div class="favort " onclick="showCart()">Cart <i class="fa-brands fa-shopify icon-green"></i> <span class="badge" id="cartCount">0</span></div>
+            <div class="language">Language <i class="fa-solid fa-language"></i></div>
+            <div class="currancy">Currency <i class="fa-solid fa-indian-rupee-sign"></i></div>
+        </div>
+    
+    </div>
+
+        </div>
+        <div class="topBar">
+            <div class="barValues text-muted">
+                <div class="logo">
+                    <img src="https://alysum.promokit.eu/modules/pkelements/views/img/icons/logo-alysum.svg" alt="">
+                </div>
+                <div class="barDetails">
+                    <div class="searchbar">
+                        <input type="search" class="searchInput" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass text-muted"></i>
+                    </div>
+                        <div class="icons">
+                           <div class="iconDiv"><div class="tool"><i class="fa-regular fa-user"></i>
+                            <div class="tip">Sing in</div></div></div> 
+                            <div class="iconDiv"><div class="tool"><i class="fa-solid fa-user-plus"></i>
+                            <div class="tip"> Sign up</div></div></div> 
+                            <div class="iconDiv"><div class="tool"><i class="fa-solid fa-lock"></i>
+                                <div class="tip"> Sign Out</div></div></div> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <div class="nav">
+        <div class="main-nav">
+            <div class="navBarDetails">
+            <div class="pHome">HOME
+                <div class="home">
+                    <div class="homeChild">
+                        <a href="">Oldstyle</a>
+                        <a href="">Delight</a>
+                        <a href="">Gadgets</a>
+                        <a href="">Alsyum</a>
+                        <a href="">Smart</a> 
+                        <a href="">Jewelry</a>
+                        <a href="">Lingerie</a>
+                        <a href="">Classic</a>
+                        <a href="">Complex</a>
+                        <a href="">Dailydeal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shop">SHOP
+                <div class="shopParent">
+                    <div class="shopChild">
+                        <div class="shopDetails">
+                           <div class="shopImage"><img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-01-img-01.jpg" alt=""></div>
+                            <div class="shopContent">
+                                <h4>Dresses</h4>
+                                <p>Casual Dresses</p>
+                                <p>Club Dresses</p>
+                                <p>Summer Dresses</p>
+                                <p>Evening Dresses</p>
+                                <p>Printed Dresses</p>
+                            </div>
+                        </div>
+                        <div class="shopDetails">
+                            <div class="shopImage"><img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-01-img-02.jpg" alt=""></div>
+                            <div class="shopContent">
+                                <h4>Coats Suits</h4>
+                                <p>Bodies</p>
+                                <p>Camis</p>
+                                <p>Bralets</p>
+                                <p>Bomber Jacket</p>
+                                <p>Biker Jacket</p>
+                            </div>
+                        </div>
+                        <div class="shopDetails">
+                            <div class="shopImage"><img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-01-img-03.jpg" alt=""></div>
+                            <div class="shopContent">
+                                <h4>Bags</h4>
+                                <p>Backpacks</p>
+                                <p>Laptop Bags</p>
+                                <p>BriefCases</p>
+                                <p>Rucksacks</p>
+                                <p>Clutches</p>
+                            </div>
+                           
+                        </div>
+                        <div class="shopDetails">
+                            <div class="shopImage"><img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-01-img-04.jpg" alt=""></div>
+                            <div class="shopContent">
+                                <h4>Tops</h4>
+                                <p>T-shirts</p>
+                                <p>Tops</p>
+                                <p>Blouses</p>
+                                <p>Shirts</p>
+                                <p>Tank Tops</p>
+                            </div>
+                            
+                        </div>
+                        <div class="shopDetails">
+                            <div class="shopImage"><img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-01-img-05.jpg" alt=""></div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature1">FEATURED
+                <div class="featureParent">
+                    <div class="featureChild">
+                        <div class="featureDetails1">
+                            <h4>Women</h4>
+                            <p>jean</p>
+                            <p>cotton</p>
+                            <p>poly</p>
+                            <p>sweat</p>
+                            <p>wollen</p>
+                        </div>
+                    <div class="featureDetails">
+                        <div class="featureimg">
+                            <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu_image02.jpg" alt="">
+                        </div>
+                        <div class="featureCont">
+                            <h5>Jeans & Denim</h5>
+                        </div>
+                    </div>
+                 
+                        <div class="featureDetails">
+                            <div class="featureimg">
+                                <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu_image05.jpg" alt="">
+                            </div>
+                            <div class="featureCont">
+                                <h5>T-shirts & Tops</h5>
+                            </div>
+                        </div>
+                 
+                        <div class="featureDetails">
+                            <div class="featureimg">
+                                <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu_image03.jpg" alt="">
+                            </div>
+                            <div class="featureCont">
+                                <h5>Accessories</h5>
+                            </div>
+                        </div>
+             
+                        <div class="featureDetails">
+                            <div class="featureimg">
+                                <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu_image01.jpg" alt="">
+                            </div>
+                            <div class="featureCont">
+                                <h5>Outerwear</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navProducts">PRODUCTS
+                <div class="navProductP">
+                    <div class="navProductC">
+                        <div class="navProChild">
+                            <div class="navProCont">
+                                <div class="navProTop navProTop1">
+                                    <h5>New Arrivals</h5>
+                                    <h5>Best Sellers</h5>
+                                    <h5>Essentital Price</h5>
+                                    <h5>Gift Guid</h5>
+                                </div>
+                                <div class="navProBottom">
+                                    <h5>Shop All <i class="fa-solid fa-circle-arrow-right text-muted"></i> </h5>
+                                    
+                                </div>
+                            </div>
+                            <div class="navProCont">
+                                <div class="navProTop">
+                                    <h5>Coats</h5>
+                                </div>
+                                <div class="navProBottom">
+                                    <p>Bodies</p>
+                                    <p>Camis</p>
+                                    <p>Bralets</p>
+                                    <p>Bomber jackets</p>
+                                    <p>Biker jacket</p>
+                                </div>   
+                            </div>
+                            <div class="navProCont">
+                                <div class="navProTop">
+                                    <h5>Bags</h5>
+                                </div>
+                                <div class="navProBottom">
+                                    <p>Backpacks</p>
+                                    <p>Laptop Bags</p>
+                                    <p>Briefcases</p>
+                                    <p>Rucksacks</p>
+                                    <p>Clutches</p>
+                                </div>   
+                            </div>
+                            <div class="navProCont">
+                                <div class="navProTop">
+                                    <h5>Tops</h5>
+                                </div>
+                                <div class="navProBottom">
+                                    <p>T-shirts</p>
+                                    <p>Tops</p>
+                                    <p>Blouses</p>
+                                    <p>Shirts</p>
+                                    <p>Tank Tops</p>
+                                </div>   
+                            </div>
+                            <div class="navProCont">
+                                <div class="navProTop">
+                                 <h5>Dresses</h5>
+                                </div>
+                                <div class="navProBottom">
+                                    <p>Casuals Dresses</p>
+                                    <p>Evening Dresses</p>
+                                    <p>Summer Dresses</p>
+                                    <p>Club Dresses</p>
+                                    <p>Print Dresses</p>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="navProChild">
+                            <div class="navProCont">
+                                <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-03-img-01.webp" alt="">
+                            </div> 
+                            <div class="navProCont">
+                                <img src="https://alysum.promokit.eu/classic/img/cms/promokit/menu/menu-item-03-img-02.webp" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>LOOKBOOK</div>
+            <div>ABOUTUS</div>
+            <div>CONTACT US</div>
+        </div>
+    </div>
+    </div>
+<div class="whole-content">
+    <div class="main-content">
+
+
+        <div class="section">
+            <div class="left">
+                <!-- CATEGORIES -->
+                <div class="sidebar">
+                    <div class="parentSidebar">
+                    <div class="sidebarDetails text-muted">
+                        <ul>
+                            <li><span class="strike">
+                                <h5>CATEGORIES</h5>
+                                <i class="fa-solid fa-shirt"></i>
+                            </span></li>
+                            <div class="line"></div>
+                            <li><span>
+                                <a href="">Women</a>
+                                <a href=""><i class="fa-solid fa-shirt"></i></a>
+                            </span></li>
+                            <li><span>
+                                <a href="">Furniture</a>
+                                <a href=""><i class="fa-solid fa-couch"></i></a>
+                            </span></li>
+                            <li><span>
+                                <a href="">Electronics</a>
+                                <a href=""><i class="fa-solid fa-camera"></i></a>
+                            </span></li>
+                            <li><span>
+                                <a href="">Gift&Flowers</a>
+                                <a href=""><i class="fa-solid fa-gift"></i></a>
+                            </span></li>
+                            <li><span>
+                                <a href="">Men</a>
+                                <a href=""><i class="fa-solid fa-mars"></i></a>
+                            </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                                 <!-- FEAURED PRODUCTS -->
+             <div class="feature">      
+                <div class="feature_product">
+                    <h5>FEAURED PRODUCTS</h5>
+                    <div class="line"></div>
+    <div class="parentProduct">
+    <div class="product">
+        <div class="product_img">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3337691473e0a7aa546a506af5a935f7.jpg?imageView2/2/w/800/q/70" alt="">
+        </div>
+        <div class="product_det">
+            <span class="feature_cont feature_contSP text-muted">YELLOWOAK</span>
+            <span>Free People What She Said...</span>
+            <span class="feature_cont text-muted">$40.50</span>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product_img">
+            <!-- <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/16f7944d859ef9c502893eb5970b3b0c.jpg?imageView2/2/w/800/q/70" alt=""> -->
+            <img src="https://img.kwcdn.com/product/fancy/7dcf932a-12b7-45e4-9aa1-7c147eb1295e.jpg?imageView2/2/w/800/q/70" alt="">
+        </div>
+        <div class="product_det">
+            <span class="feature_cont feature_contSP text-muted">REBIL</span>
+            <span>Dark Oversize Top With Open...</span>
+            <span class="feature_cont text-muted">$50.20</span>
+        </div>
+        </div>
+        <div class="product">
+            <div class="product_img">
+                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ecb222a7b543705ba26655fb1d3d3fee.jpg?imageView2/2/w/800/q/70" alt="">
+            </div>
+            <div class="product_det">
+                <span class="feature_cont feature_contSP text-muted">MAHOGANY</span>
+                <span>Silk Ruffle Top...</span>
+                <span class="feature_cont text-muted">$27.30</span>
+            </div>
+            </div>
+            <div class="product">
+                <div class="product_img">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3b12576e078c553f9678e739c5bc2279.jpg?imageView2/2/w/800/q/70" alt="">
+                </div>
+                <div class="product_det">
+                    <span class="feature_cont feature_contSP text-muted">MAHOGANY</span>
+                    <span>Silk Ruffle Top...</span>
+                    <span class="feature_cont text-muted">$27.30</span>
+                </div>
+                </div>
+                <div class="product">
+                    <div class="product_img">
+                        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a735c2db100d3091057efb6ed4221b30.jpg?imageView2/2/w/800/q/70" alt="">
+                    </div>
+                    <div class="product_det">
+                        <span class="feature_cont feature_contSP text-muted">MAHOGANY</span>
+                        <span>Silk Ruffle Top...</span>
+                        <span class="feature_cont text-muted">$27.30</span>
+                    </div>
+                    </div>
+            </div>
+</div>
+</div>
+
+<!-- NEW PRODUCTS -->
+
+<div class="new_products1">
+    <h5>NEW PRODUCTS</h5>
+    <div class="line"></div>
+
+    <div class="products1">
+<div class="newBoxshadow1">
+    <div class="product-flags">
+        <div class="new_pop">
+            <p class="product-flag-discount">-5%</p>
+             <p class="product-new">New</p></div>
+        </div>
+    <div class="wholePro ">
+    <div class="cloths1">
+        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/473fc3530980993548c6da3fe6ed9abf.jpg?imageView2/2/w/800/q/70" alt="">
+        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9c8058201d6c38a47b8bac1580e2585b.jpg?imageView2/2/w/800/q/70" alt="">
+        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/473fc3530980993548c6da3fe6ed9abf.jpg?imageView2/2/w/800/q/70" alt="">
+    </div>
+    <div class="cloths_cont">
+            <p class="Sthings SthingsSP text-muted">Masters</p>
+            <p class="size_things name">Calvin kelvin</p>
+            <p class="Sthings text-muted">$ 300.00</p>
+        
+
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+                    
+                
+                 <!-- LATEST POSTS -->
+                 <div class="events">
+                    <div class="event_parent">
+                        <h5>LATEST POSTS</h5>
+                        <div class="line"></div>
+                    <div class="event_values">
+                        <div class="event_img">
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/5c297a069efbf3cd24870d85477259fb.jpg?imageView2/2/w/800/q/70" alt="">
+                        </div>
+                        <div class="event_content">
+                            <p>Shoes</p>
+                            <span>Stunner Girls Dress Shoes Heel</span>
+                        </div>
+                    </div>
+                    <div class="event_values">
+                        <div class="event_img">
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a9c0ab88db180c00e6c811ff24ec936b.jpg?imageView2/2/w/800/q/70" alt="">
+                        </div>
+                        <div class="event_content">
+                            <p>Makeup</p>
+                            <span>Girls Makeup Kit Real Kids Make Up Set</span>
+                        </div>
+                    </div>
+                    <div class="event_values">
+                        <div class="event_img">
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/a2347c0b017bd484b6660a6aa8cd126b.jpg?imageView2/2/w/800/q/70" alt="">
+                        </div>
+                        <div class="event_content">
+                            <p>Dressing Table</p>
+                            <span>Makeup Mirror Vanity Led Light Bulbs.</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- video -->
+                <div class="promoParent">
+                    <div class="promoCont">
+                        <h5>FASHION IS HERE..!</h5>
+                    <div class="line"></div>
+
+                    </div>
+                    <div class="promoChild">
+                <div class="gallery">
+
+                    <div class="sliders"> </div>
+                    <div class="sliders"> </div>
+                    <div class="sliders"> </div>
+                    <div class="sliders"> </div>
+                     </div>
+            </div>
+            </div>
+            <!-- Side banner -->
+                <div class="sidebanner">
+                    <h5>TESTIMONIALS</h5>
+                    <div class="line"></div>
+                    <br>
+                    <div class="post">
+                        <figure class="swing">
+                            <img src="https://i.pinimg.com/564x/e6/42/7f/e6427f7e8d3969f3fbe6420c894951f0.jpg" width="200" >
+                          </figure>  
+                       </div>
+                </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rightParent">
+                <div class="banner-contain">
+                    <div class="arrow">
+                        <div class="arrowSrl" id="arrowleft"><i onclick="changeSlider(-1)" class="fa-solid fa-circle-left"></i></div>
+                        <div class="arrowSrl" id="arrowright"><i onclick="changeSlider(1)" class="fa-solid fa-circle-right"></i></div>
+                    </div>
+                    <div class="banner">
+                        <img src="https://e.rpp-noticias.io/xlarge/2021/08/11/1130615watch41jpg.jpg" alt="" class="slide slide1 active" id="img1">
+                        <img src="https://www.zdnet.com/a/img/resize/b4f0b088e83e30715565f0abdc356ca285b451ce/2023/07/24/0ae50d5e-27bd-44de-9a42-7a0938ab50fb/samsung-galaxy-watch-6-classic-bezel-4.jpg?auto=webp&width=1280" alt="" class="slide slide2" id="img2">
+                        <img src="https://static.garmincdn.com/gdc/Landing-Pages/Womens-Campaign-Landing-Page-Contentful/39696-spotlight-ananage-your-stress-womens-campaign.jpg" alt="" class="slide slide3" id="img3">
+                    </div>
+                    <ul class="bullets">
+                        <li class="bullet active" onclick="showSlide(0)"></li>
+                        <li class="bullet" onclick="showSlide(1)"></li>
+                        <li class="bullet" onclick="showSlide(2)"></li>
+                    </ul>
+                </div>
+
+                </div>
+                
+                <div class="parentBar">
+                    <div class="content">
+                    <div class="detailsBar">
+                        <div class="detailBarValues ">
+                            <nav class="nav_anime">
+                            <ul>
+                            <li class="all active">
+                               <button>All</button> 
+                            </li>
+                            <li class="featured ">
+                                 <button>FEATURED</button>
+                            </li>
+                            <li class="special">
+                                 <button>SPECIAL</button>
+                            </li>
+                            <li class="new">
+                                 <button>NEW</button>
+                            </li>
+                        </ul>
+                    </nav>
+                        </div>
+                       
+                    </div>
+                    <div class="mainThings">
+
+<div class="things_parent">
+    <!-- starting product  -->
+    
+    <!-- start 1 -->
+    <div class="things scrolls " id="product1">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f54d52e36ad95b8b8be1989e5186225a.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt=" product 1">
+                    <img src="https://img.kwcdn.com/product/fancy/d9cc8fac-c0f3-4d24-9db3-120995041954.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/425054976c2191d7bce2c589a9ebf3bd.jpg?imageView2/2/w/800/q/70" class="product_slid23" alt="">  
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product1')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product1')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(1, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(1, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(1, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 2 -->
+    <div class="things scrolls " id="product2">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/043468fc18f1f649b54fd4befd018307.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="product 2">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/043468fc18f1f649b54fd4befd018307.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/86591a6234600d5d2d706b6268a6391f.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                    </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product2')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product2')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(2, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(2, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(2, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 3 -->
+    <div class="things scrolls " id="product3">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/436ab7b680be247556744fd1990edfd3.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="product 3">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/acf21db6cf55d0225f37b9d698985e16.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4d0c463e136fad8c99b1625e9b0a5de9.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product3')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product3')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(3, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(3, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(3, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+
+    <!-- start 4 -->
+    <div class="things scrolls " id="product4">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4e09499fdf64c8ad535bfadba541776e.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3ad7cf640d63ae6fbb2fe2149e58636e.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/856547b1ca5d3ea15348e9d0d1a01863.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product4')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product4')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(4, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(4, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(4, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 5 -->
+    <div class="things scrolls " id="product5">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e00b9a73eb0a27caffa7828bd5d317be.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/23e2673f3795f6523d39105895a7a75b.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cde5ecd900539867410ea0efb6f8f4fa.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product5')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product5')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(5, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(5, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(5, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 6 -->
+    <div class="things scrolls " id="product6">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3ed627da61bb0d05e79ca49e5674f4d1.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d5331dce6992b70390066607e308eaed.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d5331dce6992b70390066607e308eaed.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product6')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product6')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(6, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(6, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(6, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 7 -->
+    <div class="things scrolls " id="product7">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0017bbf4eb4d7a0a2ef70c448a914f90.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4381f068b76701ee5fe76caec6879193.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4381f068b76701ee5fe76caec6879193.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product7')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product7')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(7, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(7, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(7, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+<!-- start 8 -->
+<div class="things scrolls " id="product8">
+    <div class="product-flags">
+        <div class="new_pop">
+            <p class="product-flag-discount">-5%</p>
+             <p class="product-new">New</p></div>
+            </div>
+  
+        <div class="parentThing"></div>
+    <div class="thingsimg"  >
+        <div class="parentThingImg">
+            <div class="carousel-track product_img_sale">
+                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/fa93e888f6f73606c108715d24e1176a.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f522d036232b48b39f35be737f502d00.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/fa93e888f6f73606c108715d24e1176a.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+            </div>
+            <!-- <p class="">Nature</p>
+                 <h2 class="pro_value">Product 11111</h2>   -->
+            <div class="buy"> 
+                <div class="buyChild">
+                <p></p>
+                <p></p>
+                <p class="circle-buy cart_shp" onclick="addToCart('product8')"><i class="fa-solid fa-bag-shopping"></i></p>
+                <p class="circle-buy wishlist"  onclick="addToWishlist('product8')"><i class="fa-regular fa-heart"></i></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        </div>
+        <div class="space-bar"></div>
+        <div class="bar">
+            <span class="slideItems1" onmouseover="changeSlide(8, 0)"></span>
+            <span class="slideItems2" onmouseover="changeSlide(8, 1)"></span>
+            <span class="slideItems3" onmouseover="changeSlide(8, 2)"></span>
+        </div>
+    </div>
+    <div class="thingsCongt">
+        <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+            <span class="rating">
+                <i class="fa-solid fa-star star_color"></i>
+                <i class="fa-solid fa-star star_color"></i>
+                <i class="fa-solid fa-star star_color"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i></span></p>
+                <p class="size_things name">Cotton Cashmere Crewneck</p>
+                <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+            </div>
+        </div>
+        <!-- end -->
+            <!-- start 9 -->
+    <div class="things scrolls " id="product9">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/985803e5b5c9f80a8b60f6f1595ea823.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d5fe71a6f6fbd8bbacd4e952b0d446a5.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/21e68c6b40a075388595ca6c44500817.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product9')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product9')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(9, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(9, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(9, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 1 -->
+    <div class="things scrolls " id="product10">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4866fe3a7be5f9f50d11fb2f0dd7ac33.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/48a7ee7c3af0def01340fb7f7d11bcbb.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e59863c1e34a0c56a42d2e29c7c4f026.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product10')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product10')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(10, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(10, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(10, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 1 -->
+    <div class="things scrolls " id="product11">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/6927d65092833e2b1896a8093dc8a5a6.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3250d9df30f6b494df7e5d27cbcf2ba3.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f763508b93d76e93cdfa5818759152bd.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product11')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product11')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(11, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(11, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(11, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start 1 -->
+    <div class="things scrolls " id="product12">
+        <div class="product-flags">
+            <div class="new_pop">
+                <p class="product-flag-discount">-5%</p>
+                 <p class="product-new">New</p></div>
+                </div>
+      
+            <div class="parentThing"></div>
+        <div class="thingsimg"  >
+            <div class="parentThingImg">
+                <div class="carousel-track product_img_sale">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e78b5f4b41ce69033b59b888d325d941.jpg?imageView2/2/w/800/q/70" class="product_slid1" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/44064cd00fc3caa7a65f9d4e338b8618.jpg?imageView2/2/w/800/q/70" class="product_slid3" alt="">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/be845e7d75ddd0ca8d8739002c1d8c7a.jpg?imageView2/2/w/800/q/70" class="product_slid2" alt="">  
+                </div>
+                <div class="buy"> 
+                    <div class="buyChild">
+                    <p></p>
+                    <p></p>
+                    <p class="circle-buy cart_shp" onclick="addToCart('product12')"><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p class="circle-buy wishlist"  onclick="addToWishlist('product12')"><i class="fa-regular fa-heart"></i></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            <div class="space-bar"></div>
+            <div class="bar">
+                <span class="slideItems1" onmouseover="changeSlide(12, 0)"></span>
+                <span class="slideItems2" onmouseover="changeSlide(12, 1)"></span>
+                <span class="slideItems3" onmouseover="changeSlide(12, 2)"></span>
+            </div>
+        </div>
+        <div class="thingsCongt">
+            <p class="Sthings SthingsSP text-muted star pro_value">WWA 
+                <span class="rating">
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-solid fa-star star_color"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></span></p>
+                    <p class="size_things name">Cotton Cashmere Crewneck</p>
+                    <p class="Sthings text-muted price"> <b>$199.90</b>  &nbsp; <s>$250.10</s> </p>
+                </div>
+            </div>
+            <!-- end -->
+            
+            
+  <!-- Cart Page -->
+  <div class="modal-container" id="cartPage">
+    <div class="modal-cont">
+      <div class="cartTop">
+          <h2>Your Cart</h2>
+          <span class="close" onclick="closeCartPage()">&times;</span>
+      </div>
+      
+      <div id="cart">
+    </div>
+    <div class="tot_price">Total Price: $<span id="totalPrice">0</span></div>
+    </div>
+  </div>
+
+  <!-- Wishlist Page -->
+  <div class="modal-container" id="wishlistPage">
+    <div class="modal-cont">
+        <div class="cartTop">
+            <h2>Your Wishlist</h2>
+            <span class="close" onclick="closeWishlistPage()">&times;</span>
+        </div>
+      <div id="wishlist"></div>
+    <div class="tot_price">Total Price: $<span id="totalPrice">0</span></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+            
+            
+           
+</div>
+                    </div>
+                </div>
+                </div>
+                    
+                <!-- offers -->
+                <div class="offers">
+                    <div class="offerValues">
+                        <div class="offerLeft">
+                            <div class="parentOffer1">
+                            <div class="offer1">
+                            <img src="https://ik.imagekit.io/promokit/Revolution/Classic/Banners/classic_image_02-2_tjZKQwUx9.webp" alt="">
+                        </div>
+                            <div class="offerConttop">
+                                <h6>SEE THE GREAT</h6>
+                                <h1>Attention</h1>
+                                <h1>to <span> <b>Details</b></span> </h1>
+                            </div>
+                        </div>
+                        <div class="parentOffer2">
+                                <div class="offer2">
+                            <img src="https://ik.imagekit.io/promokit/Revolution/Classic/Banners/classic_image_03-2_jwuTdD6MZ.webp" alt="">
+                                </div>
+                                <div class="offerContbottom">
+                                    <h6>DIVIDED</h6>
+                                    <h1>Summer</h1>
+                                    <h1><b>Essentials</b> </h1>
+                                </div>
+                             </div>
+                        </div>
+                            <div class="parentofferRight">
+                            <div class="offerRight">
+                        <img src="https://ik.imagekit.io/promokit/Revolution/Classic/Banners/classic_image_01-4_d_0FBUYMe.webp" alt="">
+                            </div>
+                            <div class="offerContright">
+                                <h6>EXCLUSIVE</h6>
+                                <h1>DISCOUNT</h1>
+                                <h1> <b>& Offers</b></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- special -->
+    <div class="parentSpecial">
+        <h5 class="space mb-2-lg">PRODUCTS</h5>
+        <br>
+        <div class="spl">
+        <div class="childSpl">
+            <div class="childSpl2">
+            <div class="splProducts">
+                <div class="splLine">
+                <div class="splImg">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/b502e9f4674af4d602a46cbfedd8a8f9.jpg?imageView2/2/w/800/q/70" alt="">
+                </div>
+                <div class="splCongt">
+                    <p class="size sizeSp text-muted">MASTERS</p>
+                    <p class="size_cont">Short Sleeve Shirts Summer Floral</p>
+                    <p class="size text-muted">$250</p>
+                </div>
+            </div>
+            </div>
+            <div class="splProducts">
+                <div class="splLine">
+                <div class="splImg">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0f3b6201ed0e78fd28ac61217f384748.jpg?imageView2/2/w/800/q/70" alt="" class="edit">
+                </div>
+                <div class="splCongt">
+                    <p class="size sizeSp text-muted">MASTERS</p>
+                    <p class="size_cont"> Casual Women's Plus Floral Print</p>
+                    <p class="size text-muted">$180.70</p>
+                </div>
+            </div>
+        </div>
+            <div class="splProducts">
+                <div class="splLine">
+                <div class="splImg">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/038996fe5f6379aacc0abd8eb8ee291f.jpg?imageView2/2/w/800/q/70" alt="">
+                </div>
+                <div class="splCongt">
+                    <p class="size sizeSp text-muted">MASTERS</p>
+                    <p class="size_cont">Contrast Pullover Sweatshirt</p>
+                    <p class="size text-muted">$200</p>
+                </div>
+            </div>
+                </div>
+                <div class="splProducts">
+                    <div class="splLine">
+                    <div class="splImg">
+                        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4c96f216c0346e14c03e19f1a1a19d63.jpg?imageView2/2/w/800/q/70" alt="">
+                    </div>
+                    <div class="splCongt">
+                        <p class="size sizeSp text-muted">MASTERS</p>
+                        <p class="size_cont">MISSMAY Women's Formal</p>
+                        <p class="size text-muted">$199</p>
+                    </div>
+                </div>
+                    </div>
+                    <div class="splProducts">
+                        <div class="splLine">
+                        <div class="splImg">
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ae160bf1e0e94aa89cdd0c76acc55b7f.jpg?imageView2/2/w/800/q/70" alt="">
+                        </div>
+                        <div class="splCongt">
+                            <p class="size sizeSp text-muted">MASTERS</p>
+                            <p class="size_cont">Printed Fit & Flare Dress</p>
+                            <p class="size text-muted">$270.30</p>
+                        </div>
+                    </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="splProducts">
+                            <div class="splLine">
+                            <div class="splImg">
+                                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0727cf2228cd94408bcdb849bcd54e78.jpg?imageView2/2/w/800/q/70" alt="">
+                            </div>
+                            <div class="splCongt">
+                                <p class="size sizeSp text-muted">MASTERS</p>
+                                <p class="size_cont">Long Dress Maxi Casual</p>
+                                <p class="size text-muted">$170.77</p>
+                            </div>
+                        </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="splProducts">
+                                <div class="splLine">
+                                <div class="splImg">
+                                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/aeaf8caba9adf9c9e9e98c71bb31e4ab.jpg?imageView2/2/w/800/q/70" alt="">
+                                </div>
+                                <div class="splCongt">
+                                    <p class="size sizeSp text-muted">MASTERS</p>
+                                    <p class="size_cont">Women Dressy Sweatshirts</p>
+                                    <p class="size text-muted">$300</p>
+                                </div>
+                            </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="splProducts">
+                                    <div class="splLine">
+                                    <div class="splImg">
+                                        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/5a4a16262b79650ec4f2c4fe9074ec0a.jpg?imageView2/2/w/800/q/70" alt="">
+                                    </div>
+                                    <div class="splCongt">
+                                        <p class="size sizeSp text-muted">MASTERS</p>
+                                        <p class="size_cont">Gold Round Neck Sequin Short</p>
+                                        <p class="size text-muted">$190</p>
+                                    </div>
+                                </div>
+                                    </div>
+                                    <div class="splProducts">
+                                        <div class="splLine">
+                                        <div class="splImg">
+                                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3634158725fd19cde8ad0ce8db8cb383.jpg?imageView2/2/w/800/q/70" alt="">
+                                        </div>
+                                        <div class="splCongt">
+                                            <p class="size sizeSp text-muted">MASTERS</p>
+                                            <p class="size_cont">Maroon velvet gown</p>
+                                            <p class="size text-muted">$259.20</p>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                <!-- blog -->
+                <div class="blog">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="lineright"></div>
+                <div class="blogParent container">
+                    <div class="blogParent2 slider-wrapper">
+                    <div class="wholeblog image-list">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            chevron_left
+                          </button>
+                    <div class="image-item ">
+                        <div class="blogImg"> <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/79b0195cf00f490464c356c1532a87a3.jpg?imageView2/2/w/800/q/70" alt=""> </div>
+                        <div class="blogCont">
+                            <h6> Red Rose Butterfly Hair Grip</h6>
+                            <h6>Material : Aluminium</h6>
+                            <h6>Ideal For : Women</h6> 
+                        </div>
+                    </div>
+                    <div class="image-item ">
+                        <div class="blogImg"> <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/16d3985590a28cb4060a6e7cbd882101.jpg?imageView2/2/w/800/q/70" alt=""> </div>
+                          <div class="blogCont">
+                            <h6>Braid Wrapped High Bun</h6>
+                            <h6>Bridal hairstyle</h6>
+                            <h6>Ideal For : Women</h6> 
+                        </div>
+                    </div>
+                    <div class="image-item ">
+                        <div class="blogImg"> <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/dd78071ca7edb5138879cea43d2a9c33.jpg?imageView2/2/w/800/q/70" alt=""> </div>
+                          <div class="blogCont">
+                            <h6>Long Acrylic Nail</h6>
+                            <h6>Material : poly</h6>
+                            <h6>Ideal For : Women</h6> 
+                        </div>
+                    </div>
+                    <div class="image-item ">
+                        <div class="blogImg"> <img src="https://img.kwcdn.com/product/open/2023-12-12/1702353227898-465f7c6bf1ab4417952075010cb80a9a-goods.jpeg?imageView2/2/w/800/q/70" alt=""> </div>
+                          <div class="blogCont">
+                            <h6>Hair Towel Wrap,Turbans</h6>
+                            <h6>Material :Microfibre </h6>
+                            <h6>Ideal For : Women</h6> 
+                        </div>
+                    </div>
+                    <div class="image-item ">
+                        <div class="blogImg"> <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f058d08329fbb8bd4c8d35dd48d45cd9.jpg?imageView2/2/w/800/q/70" alt=""> </div>
+                          <div class="blogCont">
+                            <h6>Trendy Roller Skate Shoes</h6>
+                            <h6> Double Row Four Wheel Sneakers</h6>
+                            <h6>Ideal For : Women</h6> 
+                        </div>
+                    </div>
+                    <button id="next-slide" class="slide-button material-symbols-rounded">
+                        chevron_right
+                      </button>
+                      <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                          <div class="scrollbar-thumb"></div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                </div>
+            </div>                
+                <!-- end -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+                <!-- Brand -->
+                <div class="brand">
+                    <h5>OUR BRANDS</h5>
+                    <div class="lineright"></div>
+                    <div class="brandParent">
+
+                        <!--- This may need to change --->
+                <div class="main-container">
+                <div class="coverflow-container">
+                <ol class="coverflow-list">
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-1">
+                <li class="coverflow-item">
+                <label for="cover-1">
+                <figure class="album-cover">
+                <img src="https://www.thestatesman.com/wp-content/uploads/2017/12/accessories.jpg">
+                <figcaption class="album-name">Vintage</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-2">
+                <li class="coverflow-item">
+                <label for="cover-2">
+                <figure class="album-cover">
+                <img src="https://threadzag.com/wp-content/uploads/2022/11/fashion-assesories.jpg" />
+                <figcaption class="album-name">Free Style</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-3">
+                <li class="coverflow-item">
+                <label for="cover-3">
+                <figure class="album-cover">
+                <img src="https://thumbs.dreamstime.com/b/fashion-summer-women-clothes-set-cosmetics-accessories-flat-lay-top-view-91902924.jpg">
+                <figcaption class="album-name">Classy</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-4">
+                <li class="coverflow-item">
+                <label for="cover-4">
+                <figure class="album-cover">
+                <img src="https://st2.depositphotos.com/1891407/8962/v/450/depositphotos_89625486-stock-illustration-woman-summer-accessories-set.jpg">
+                <figcaption class="album-name">Summer</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-5" checked>
+                <li class="coverflow-item">
+                <label for="cover-5">
+                <figure class="album-cover">
+                <img src="https://foreignpolicyi.org/wp-content/uploads/2021/06/Buy-Womens-Popular-Fashion-Accessories.jpeg">
+                <figcaption class="album-name"></figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-6">
+                <li class="coverflow-item">
+                <label for="cover-6">
+                <figure class="album-cover">
+                <img src="https://media.licdn.com/dms/image/C5612AQElEsGooG8-FA/article-cover_image-shrink_720_1280/0/1627627690637?e=2147483647&v=beta&t=FTDc_EFhC3-Qg2CfCgUzsxeCs1GZwC-1TQ20jmGdkmo">
+                <figcaption class="album-name">accessories</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-7">
+                <li class="coverflow-item">
+                <label for="cover-7">
+                <figure class="album-cover">
+                    <img src="https://previews.123rf.com/images/kitzcorner/kitzcorner1704/kitzcorner170400064/77425673-fashion-summer-women-clothes-set-with-cosmetics-and-accessories-flat-lay-top-view.jpg">
+                <figcaption class="album-name">Mordern</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-8">
+                <li class="coverflow-item">
+                <label for="cover-8">
+                <figure class="album-cover">
+                    <img src="https://st4.depositphotos.com/17107776/20757/i/450/depositphotos_207573008-stock-photo-fashion-accessories-blue-high-heels.jpg">
+                <figcaption class="album-name">HomeGrown</figcaption>
+                </figure>
+                </label>
+                </li>
+                <!-- Cover item -->
+                <input type="radio" name="cover-item" id="cover-9">
+                <li class="coverflow-item">
+                <label for="cover-9">
+                <figure class="album-cover">
+                <img src="https://img.freepik.com/premium-photo/summer-travel-fashion-accessories_39408-2666.jpg?size=626&ext=jpg">
+                <figcaption class="album-name">Trip Out</figcaption>
+                </figure>
+                </label>
+                </li>
+                </ol>
+                </div>
+                <div class="controls">
+                <label for="cover-1" class="cover1">1</label>
+                <label for="cover-2" class="cover1">2</label>
+                <label for="cover-3" class="cover1">3</label>
+                <label for="cover-4" class="cover1">4</label>
+                <label for="cover-5" class="active cover1">5</label>
+                <label for="cover-6" class="cover1">6</label>
+                <label for="cover-7" class="cover1">7</label>
+                <label for="cover-8" class="cover1">8</label>
+                <label for="cover-9" class="cover1">9</label>
+                </div>
+                </div>
+
+
+    </div>
+</div>
+<!-- Bottom -->
+    <div class="bottom">
+        <div class="bottomParent">
+            <div class="bottomChild">
+                <div class="bottomTop">
+                    <div class="bottomTopParent">
+                    <h4>STAY UP TO DATE</h4>
+                    <div class="emailSearch"> 
+                    <input type="search" placeholder="Your email address" class="mail">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+                <div class="bottomValues">
+                    <div class="bottomValuesParent">
+                    <div class="bottomValuesChild">
+                        <div class="bottomValuesChild">
+                            <h6>INFORMATION</h6>
+                        </div>
+                        <div class="bottomlower">
+                        <p> Legal Notice</p>
+                        <p>About us</p>
+                        <p>Secure payment</p>
+                        <p>Delivery</p>
+                        <p>Sitemap</p>
+                        </div>
+                        
+                    </div>
+                    <div class="bottomValuesChild">
+                        <div class="bottomHead"><h6>CUSTOMER SERVICE</h6></div>
+                        <div class="bottomlower">
+                        <p> Legal Notice</p>
+                        <p>About us</p>
+                        <p>Secure payment</p>
+                        <p>Delivery</p>
+                        <p>Sitemap</p>
+                        </div>
+                        
+                    </div>
+                    <div class="bottomValuesChild">
+                        <div class="bottomHead">
+                            <h6>MY ACCOUNT</h6>
+                        </div>
+                        <div class="bottomlower">
+                            <p> Prices drop</p>
+                            <p>New products</p>
+                            <p>Best sales</p>
+                            <p>Contact us</p>
+                            <p>Sitemap</p>
+                            </div>
+                      
+                    </div>
+                    <div class="bottomValuesChild">
+                        <div class="bottomHead">
+                            <h6>CONTACT DETAILS</h6>
+                        </div>
+                        <div class="bottomlower">
+                        <p>Phone : 9944532555</p>
+                        <p>Fax : 9585862463</p>
+                        <p>subashchandr335@gmail.com</p>
+                        <p>fashioncorner@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                    <div class="bottomValuesChild">
+                        <h6>INFORMATION</h6>
+                        <p> Legal Notice</p>
+                        <p>About us</p>
+                        <p>Secure payment</p>
+                        <p>Delivery</p>
+                        <p>Sitemap</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="bottomDetails">
+                    <div class="bottomDetailsParent">
+                    <div class="bottomImg">
+                    <div class="bpara">Easy returns. Free shipping on orders over $100. Need help?</div>
+                    </div>
+                    <div class="bottomIcons">
+                        <p class="git"><i class="fa-brands fa-github"></i></p>
+                        <p class="fb"><i class="fa-brands fa-facebook"><a href=""></a></i></p>
+                        <p class="twitter"><i class="fa-brands fa-twitter"></i></p>
+                        <p class="insta"><i class="fa-brands fa-instagram"></i></p>
+                        <p class="youtube"><i class="fa-brands fa-youtube"></i></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="./Assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="./Assets/js/script.js"></script>
+
+</body>
+</html>
